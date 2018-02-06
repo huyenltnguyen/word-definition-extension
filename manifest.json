@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Word Definition Extension",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "animal-paw-print.png",
+    "default_title": "Word Definition Extension",
+    "default_popup": "popup.html"
+  }
+}
